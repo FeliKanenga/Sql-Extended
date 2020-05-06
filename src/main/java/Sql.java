@@ -2,11 +2,11 @@ import java.sql.*;
 
 public class Sql {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args)  {
 
         //Class.forName("org.postgresql.Driver");
-
-        String url ="http://localhost:8080/?pgsql=postgres&username=feli&db=Umuzi";
+        String message = "Question failed";
+        String url ="jdbc:postgresql://localhost:8080/Umuzi";
             String user = "feli";
             String password = "passfeli";
 
@@ -20,7 +20,7 @@ public class Sql {
 
 
             //Query
-            System.out.println("Creating statement...");
+            System.out.println("Creating statement...Question 1");
             Statement myStmt = connection.createStatement();
 
 
@@ -33,24 +33,23 @@ public class Sql {
             String sql6 = "SELECT MAX(Amount) FROM Payments";
 
             ResultSet rs = myStmt.executeQuery(sql);
-            ResultSet rs1 = myStmt.executeQuery(sql1);
-            ResultSet rs2 = myStmt.executeQuery(sql2);
-            ResultSet rs3 = myStmt.executeQuery(sql3);
-            ResultSet rs4 = myStmt.executeQuery(sql4);
-            ResultSet rs5 = myStmt.executeQuery(sql5);
-            ResultSet rs6 = myStmt.executeQuery(sql6);
 
             while(rs.next()){
-                //Retrieve by column name
-                String first = rs.getString("firstname");
+                //Retrieve by column name and display values
 
-                //Display values
-                System.out.println("FirstName: " + first);
+                System.out.println(rs.getString("CustomerID")+", "
+                        +rs.getString("FirstName")+", "+rs.getString("LastName")+", "
+                        +rs.getString("Gender")+", "+rs.getString("Address")+", "
+                        +rs.getString("Phone")+", "+rs.getString("Email")+", "
+                        +rs.getString("City")+", "+rs.getString("country"));
             }
             rs.close();
         } catch (SQLException e) {
-            e.printStackTrace();
+            System.out.println(message);
         }
+
+
+
 
 
 

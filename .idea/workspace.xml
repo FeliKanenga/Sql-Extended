@@ -27,6 +27,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Postrgres" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -40,5 +44,19 @@
       <updated>1588668485197</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="517" y="100" key="#Sql" timestamp="1588755009439">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="517" y="100" key="#Sql/0.0.1600.860@0.0.1600.860" timestamp="1588755009439" />
+    <state x="506" y="171" key="FileChooserDialogImpl" timestamp="1588753806716">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="506" y="171" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1588753806716" />
+    <state x="280" y="4" key="SettingsEditor" timestamp="1588753814865">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="280" y="4" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1588753814865" />
   </component>
 </project>
